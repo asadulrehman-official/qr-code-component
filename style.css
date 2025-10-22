@@ -1,0 +1,80 @@
+:root {
+  --slate-300: #d5e1ef;
+  --slate-500: #68778d;
+  --slate-900: #1f314f;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--slate-300);
+}
+
+.box {
+  height: 70%;
+  width: 390px;
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 23px;
+}
+.qr-image {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 23px;
+  background-image: url(./image/png/image-qr-code.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.qr-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--slate-900);
+  margin-top: 16px;
+  text-align: center;
+}
+.content p {
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  color: var(--slate-500);
+  margin-top: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    width: 283px;
+    height: 451px;
+  }
+  .qr-image {
+    height: 60%;
+  }
+}
